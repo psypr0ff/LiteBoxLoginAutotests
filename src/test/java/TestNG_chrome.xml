@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ChromeBlackboxAutotests">
+    <test name="smoke">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="smokeTest"/>
+        </classes>
+    </test>
+    <test name="RememberMeCheckbox">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="rememberMeTest"/>
+        </classes>
+    </test>
+    <test name="LinksTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="linksTest" />
+        </classes>
+    </test>
+    <test name="LogoShopRates">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="newTabWindowBtnTest" />
+        </classes>
+    </test>
+    <test name="ShowHidePassword">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="showPassTest" />
+        </classes>
+    </test>
+    <test name="Authorisation">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="authorizationTest" />
+        </classes>
+    </test>
+    <test name="errorAlerts">
+        <parameter name="browser"   value="chrome" />
+        <classes>
+            <class name="errorsTest"/>
+        </classes>
+    </test>
+</suite>

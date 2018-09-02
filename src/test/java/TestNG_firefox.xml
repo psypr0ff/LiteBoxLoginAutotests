@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FirefoxBlackboxAutotests">
+    <test name="smoke_ff">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="smokeTest"/>
+        </classes>
+    </test>
+    <test name="RememberMeCheckbox_ff">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="rememberMeTest"/>
+        </classes>
+    </test>
+    <test name="LinksTest_ff">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="linksTest" />
+        </classes>
+    </test>
+    <test name="LogoShopRates_ff">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="newTabWindowBtnTest" />
+        </classes>
+    </test>
+    <test name="ShowHidePassword_ff">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="showPassTest" />
+        </classes>
+    </test>
+    <test name="Authorisation_ff">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="authorizationTest" />
+        </classes>
+    </test>
+    <test name="errorAlerts_ff">
+        <parameter name="browser"   value="firefox" />
+        <classes>
+            <class name="errorsTest"/>
+        </classes>
+    </test>
+</suite>
