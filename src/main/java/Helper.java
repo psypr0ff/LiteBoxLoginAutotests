@@ -83,7 +83,7 @@ public class Helper {
     //проверка корректности открытия нового окна при клике на элемент(лого или корзина)
     public static void checkNewTabWindowTitle(String expectedTitle) throws InterruptedException{
         String loginWindow = driver.getWindowHandle(); //ловим имя открытой вкладки
-        String actualTitle="";
+        String actualTitle;
         for(String childHandle : driver.getWindowHandles()){ //пробегаем по всем открытым вкладкам браузера
             if (!childHandle.equals(loginWindow)){ //если имя открытой вкладки отличается от имени первоначальной вкладки то
                 driver.switchTo().window(childHandle); //переключаемся на эту вкладку
@@ -163,7 +163,7 @@ public class Helper {
         };
         return attributes;
     }
-    //метод печатающий значения CSS атрибутов
+    //метод печатающий значения CSS атрибутов для проверки плэйсхолдеров
     public static void printResults(String[] placeholderCSS){
         System.out.println("top: "+placeholderCSS[0]);
         System.out.println("font: "+placeholderCSS[1]);
