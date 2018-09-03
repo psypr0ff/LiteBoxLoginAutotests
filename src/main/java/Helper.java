@@ -1,4 +1,5 @@
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -151,6 +152,23 @@ public class Helper {
             spaces=spaces+" ";
         }
         return spaces;
+    }
+
+    //возвращаем значение CSS атрибутов выбранных плейсхолдеров
+    public static String[] placeholderCssAttributes(WebElement webElement){
+        String[] attributes = {
+                webElement.getCssValue("top"),
+                webElement.getCssValue("font"),
+                webElement.getCssValue("color")
+        };
+        return attributes;
+    }
+    //метод печатающий значения CSS атрибутов
+    public static void printResults(String[] placeholderCSS){
+        System.out.println("top: "+placeholderCSS[0]);
+        System.out.println("font: "+placeholderCSS[1]);
+        System.out.println("color: "+placeholderCSS[2]);
+        System.out.println("------------------------------------------------------");
     }
 
 }

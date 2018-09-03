@@ -43,4 +43,10 @@
             <class name="errorsTest"/>
         </classes>
     </test>
+    <test name="CSS_ff">
+        <parameter name="browser"   value="firefox" />
+        <classes>
+            <class name="placeholderTest"/>
+        </classes>
+    </test>
 </suite>

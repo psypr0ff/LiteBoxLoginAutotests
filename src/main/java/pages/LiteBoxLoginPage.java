@@ -81,6 +81,14 @@ public class LiteBoxLoginPage {
         @FindBy (xpath = "//a[@class=\"soc_yotube\"]")
         public WebElement youtube;
 
+    //плэйсхолдер поля ввода логина
+        @FindBy(xpath = "//label[text()='Логин']")
+        public WebElement loginPlaceholder;
+
+    //плэйсхолдер поля ввода пароля
+        @FindBy(xpath = "//label[text()='Пароль']")
+        public WebElement passwordPlaceholder;
+
     //поле ввода пароля
         @FindBy (name = "password")
         public WebElement inputPasswordField;
